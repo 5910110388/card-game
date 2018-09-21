@@ -31,13 +31,15 @@
   display: inline-block;
   text-align: center;
   width: 3em;
-  font-size: 2em;
+  height: 3em;
+  font-size: 2.5em;
+  padding-top: 55px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   margin: 1em;
   user-select: none;
 }
 
 .activeCard{
-  color: red;
-  background: pink;
+  color: blue;
+  background: skyblue;
 }
