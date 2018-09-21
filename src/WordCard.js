@@ -42,7 +42,8 @@ export default class WordCard extends Component {
                 }
                 <div className="result">
                 <p>Round : {this.state.attemt}</p>
-                <p>{this.state.completed && this.state.attemt ==  1 ? "so clever, you can solved in first round" : ""}</p>
+                <p>{this.state.completed && this.state.attemt ==  1 ? "so clever, you can solved in first round." : ""}</p>
+                <p>{this.state.completed && this.state.attemt >=  4 ? "good job but you should practice more." : ""}</p>
                 <p>{this.state.completed ? alert('YOU ARE THE WINNER!') : ""}</p>
                 </div>
                 
