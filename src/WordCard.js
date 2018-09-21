@@ -31,6 +31,7 @@ export default class WordCard extends Component {
         }
     }
 
+
     render(){
         return(
             <div className="App">
@@ -44,9 +45,10 @@ export default class WordCard extends Component {
                 <p>Round : {this.state.attemt}</p>
                 <p>{this.state.completed && this.state.attemt ==  1 ? "so clever, you can solved in first round." : ""}</p>
                 <p>{this.state.completed && this.state.attemt >=  4 ? "good job but you should practice more." : ""}</p>
+                <p>{this.state.completed == false && this.state.attemt >=  10 ? "you lose!!!!" : ""}</p>
+                <p>{this.state.completed == false && this.state.attemt >=  10 ? this.state.attemt = 1 : ""}</p>
                 <p>{this.state.completed ? alert('YOU ARE THE WINNER!') : ""}</p>
                 </div>
-                
             </div>
         )
     }
