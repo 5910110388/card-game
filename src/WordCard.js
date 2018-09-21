@@ -24,7 +24,8 @@ export default class WordCard extends Component {
         if(guess.length === this.state.chars.length){
             if(guess === this.state.word){
                 this.setState({guess: [], completed: true})
-            }else{
+            }
+            else{
                 this.setState({guess: [], attemt: this.state.attemt + 1})
             }
         }
@@ -39,8 +40,11 @@ export default class WordCard extends Component {
                         activationHandler = {this.activationHandler}/>
                     )
                 }
+                <div className="result">
                 <p>Round : {this.state.attemt}</p>
-                <p>{this.state.completed? "you win" : ""}</p>
+                <p>{this.state.completed ? alert('YOU ARE THE WINNER!') : ""}</p>
+                </div>
+                
             </div>
         )
     }
