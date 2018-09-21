@@ -42,6 +42,7 @@
   margin-left: 1em;
   user-select: none;
   background-color: white;
+  border: 1px solid black;
 }
 
 .activeCard{
