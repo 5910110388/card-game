@@ -1,5 +1,8 @@
 .App {
   text-align: center;
+  background: url("background.jpg");
+  background-size: cover;
+  height: 100vh;
 }
 
 .App-logo {
@@ -38,6 +41,7 @@
   margin-top: 5em;
   margin-left: 1em;
   user-select: none;
+  background-color: white;
 }
 
 .activeCard{
